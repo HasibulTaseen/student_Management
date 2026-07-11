@@ -1,0 +1,25 @@
+.LogIn{
+    margin-left: 500px;
+    margin-top: 200px;
+    
+}
+.img_login{
+    height: 20px;
+    width: 10px;
+    
+}
+.btn_primary{
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    margin-left: 80px;
+    height: 50px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+.banner_text{
+    height: 30px;
+}
+.diu_text{
+    margin-left: 80px;
+}
