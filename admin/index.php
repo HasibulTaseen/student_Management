@@ -64,7 +64,11 @@ Phone:
 
 <br><br>
 
+cgpa:
+<input type="text" name="cgpa">
 
+
+<br><br>
 <button type="submit">
 Add Student
 </button>

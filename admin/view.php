@@ -55,7 +55,7 @@ $result=mysqli_query($conn,$query);
 <th>Email</th>
 
 <th>Phone</th>
-
+<th>cgpa</th>
 <th>Action</th>
 
 
@@ -106,7 +106,9 @@ while($row=mysqli_fetch_assoc($result))
 <?php echo $row['phone']; ?>
 </td>
 
-
+<td>
+<?php echo $row['cgpa']; ?>
+</td>
 <td>
 
 <a href="delete.php?id=<?php echo $row['student_id']; ?>">

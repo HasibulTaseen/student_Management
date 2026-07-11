@@ -33,6 +33,53 @@ View Students
 
 <br><br>
 
-<a href="logout.php">
+<!-- <a href="logout.php">
 Logout
-</a>
+</a> -->
+
+<?php
+
+// session_start();
+
+// if(!isset($_SESSION['username']))
+// {
+//     header("Location: ../login.php");
+//     exit();
+// }
+
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Student Dashboard</title>
+
+</head>
+
+<body>
+
+<h2>Check Your CGPA</h2>
+
+<form action="result.php" method="POST">
+
+    <label>Student ID</label>
+
+    <input type="text" name="student_id" required>
+
+    <br><br>
+
+    <button type="submit">
+        Search CGPA
+    </button>
+
+</form>
+
+<br>
+
+<a href="logout.php">Logout</a>
+
+</body>
+
+</html>

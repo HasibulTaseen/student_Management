@@ -9,11 +9,11 @@ $department = $_POST['department'];
 $semester = $_POST['semester'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
-
+$cgpa = $_POST['cgpa'];
 
 
 $query = "INSERT INTO students
-(student_id, name, department, semester, email, phone)
+(student_id, name, department, semester, email, phone,cgpa)
 
 VALUES
 
@@ -22,7 +22,8 @@ VALUES
 '$department',
 '$semester',
 '$email',
-'$phone')";
+'$phone',
+'$cgpa')";
 
 
 
