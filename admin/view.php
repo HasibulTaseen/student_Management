@@ -119,6 +119,11 @@ Delete
 
 
 </td>
+<td>
+    <a href="edit.php?id=<?php echo $row['student_id']; ?>">
+        Update
+    </a>
+</td>
 
 
 </tr>

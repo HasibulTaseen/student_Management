@@ -1,0 +1,72 @@
+.LogIn{
+    margin-left: 500px;
+    margin-top: 200px;
+    
+}
+.img_login{
+    height: 20px;
+    width: 10px;
+    
+}
+/* .img_Das{
+    background-size: cover;
+      background-position: center center;
+       background-repeat: no-repeat;
+        background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+} */
+.btn_primary{
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    margin-left: 80px;
+    height: 50px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+.banner_text{
+    height: 30px;
+}
+.diu_text{
+    margin-left: 80px;
+}
+
+.admin_Welcome{
+  
+    font-size: 2.5em;
+    text-align: center;
+}
+  .admin_dasboard {
+    background-color: rgb(139, 139, 203);
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 8px;
+
+   
+}
+.dashboard_content{
+    margin-left: 95px;
+    margin-right: 160px;
+    text-align: center;
+}
+.dashboard_link{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    background-color: rgb(184, 184, 228);
+    color: black;
+    border-radius: 6px;
+   font-size: 1.25em;
+  
+     
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* background-color: rgb(44, 25, 44); */
+    background-image: url(../image/AD_D.jpg);
+    
+}

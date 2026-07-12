@@ -80,7 +80,7 @@ Add Student
 <br>
 
 
-<a href="admin/dashboard.php">
+<a href="dashboard.php">
 Back to Dashboard
 </a>
 
