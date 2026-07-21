@@ -1,47 +1,97 @@
 <?php
 
+
 session_start();
 
-if(!isset($_SESSION['username']))
+
+if(!isset($_SESSION['username']) || $_SESSION['role'] != 'admin')
 {
-    header("Location: login.php");
+    header("Location: ../login.php");
     exit();
 }
 
+
 ?>
-<!-- <img src="image/AD_D.JPG" alt=""> -->
+
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+
+    <title>Admin Dashboard</title>
 <link rel="stylesheet" href="css/style.css">
 <div class="admin_dasboard">
 <h1 class="admin_Welcome">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="admin_dashboard">
+
+
+<h1>
 Welcome <?php echo $_SESSION['username']; ?>
 </h1>
 
+
 <div class="dashboard_content">
+
+
 <a class="dashboard_link" href="index.php">
 Add Student
 </a>
 
-<br><br>
-<a class="dashboard_link" href="view.php">
-Update Student
-</a>
 
 <br><br>
 
-<a class="dashboard_link" href="delete.php">
-Delete Student
-</a>
-
-<br><br>
 
 <a class="dashboard_link" href="view.php">
 View Students
 </a>
 
+
 <br><br>
 
-<a class="dashboard_link" href="logout.php">
+
+<a class="dashboard_link" href="delete.php">
+Delete Student
+</a>
+
+
+<br><br>
+
+
+<a class="dashboard_link" href="teacher_info.php">
+Teacher Information
+</a>
+
+
+<br><br>
+
+
+<a class="dashboard_link" href="../logout.php">
 Logout
 </a>
+
+
 </div>
+
+
 </div>
+
+
+</body>
+
+
+</html>
+
