@@ -7,13 +7,21 @@ include "db.php";
 $username = $_POST['username'];
 $password = $_POST['password'];
 $role = $_POST['role'];
+
+
+// =========================
 // ADMIN LOGIN
+// =========================
+
 if($role == "admin")
 {
-    if($username == "admin" && $password == "12345")
+    // Change these to your actual Admin username and password
+
+    if($username == "admin" && $password == "admin123")
     {
         $_SESSION['username'] = "admin";
         $_SESSION['role'] = "admin";
+
         header("Location: admin/dashboard.php");
         exit();
     }
@@ -23,7 +31,12 @@ if($role == "admin")
         exit();
     }
 }
-//TEACHER AND STUDENT LOGIN
+
+
+// =========================
+// STUDENT / TEACHER LOGIN
+// =========================
+
 $query = "SELECT * FROM users
           WHERE username='$username'
           AND role='$role'";
@@ -35,19 +48,21 @@ if(mysqli_num_rows($result) > 0)
 {
     $user = mysqli_fetch_assoc($result);
 
-    // Check encrypted password
-
     if(password_verify($password, $user['password']))
     {
         $_SESSION['username'] = $user['username'];
         $_SESSION['role'] = $user['role'];
 
+
+        // Teacher
         if($role == "teacher")
         {
-            header("Location: teacher/dashboard.php");
+            header("Location: teachers/dashboard.php");
             exit();
         }
 
+
+        // Student
         elseif($role == "student")
         {
             header("Location: student/dashboard.php");
