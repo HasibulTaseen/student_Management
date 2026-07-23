@@ -25,13 +25,13 @@ Add Student
 Delete Student
 </a> -->
 
-<br><br>
+<!-- <br><br>
 
 <a href="view.php">
 View Students
 </a>
 
-<br><br>
+<br><br> -->
 
 <!-- <a href="logout.php">
 Logout
@@ -77,8 +77,31 @@ Logout
 </form>
 
 <br>
+<br><br>
 
-<a href="logout.php">Logout</a>
+<a href="register_course.php">
+Register Course
+</a>
+
+<br><br>
+
+<a href="my_courses.php">
+My Courses
+</a>
+
+<br><br>
+
+<a href="my_marks.php">
+My Marks
+</a>
+
+<br><br>
+
+<a href="my_attendance.php">
+My Attendance
+</a>
+<br><br>
+<a href="../logout.php">Logout</a>
 
 </body>
 

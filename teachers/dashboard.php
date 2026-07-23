@@ -101,7 +101,11 @@ Hide Information
 
 
 <br><br>
+<br><br>
 
+<a href="my_sections.php">
+My Assigned Sections
+</a>
 <a href="../logout.php">
 Logout
 </a>

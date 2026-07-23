@@ -78,11 +78,18 @@ Teacher Information
 
 <br><br>
 
+<a class="dashboard_link" href="course_info.php">
+Course Management
+</a>
 
+<br><br>
+<a class="dashboard_link" href="section_info.php">
+Section Management
+</a>
+<br> <br>
 <a class="dashboard_link" href="../logout.php">
 Logout
 </a>
-
 
 </div>
 
